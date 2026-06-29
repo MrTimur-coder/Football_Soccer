@@ -25,6 +25,13 @@ body a:hover {
   padding: 0 20px;
 }
 
+.box-2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+
 h1 {
   text-align: center;
 }
@@ -33,13 +40,33 @@ h2 {
   margin-left: 40px;
 }
 
-img {
- max-width: 100%;
- height: auto;
+p {
+  max-width: 800px;
 }
 
-/* @media (min-width: 1000px) {
-  .box-1 {
-    display: flex;
-  }
-} */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+@media (max-width: 1200px) {
+   .box-1{
+      max-width: 730px;
+      margin: auto;
+   }
+   .box-2 {
+      display: grid;
+      grid-column: 1 / span 1;
+   }
+}
+
+@media (max-width: 768px) {
+   .box-1 {
+      display: grid;
+      grid-column: 2 / span 1;
+   }
+   .box-2 {
+      display: flex;
+   }
+}
