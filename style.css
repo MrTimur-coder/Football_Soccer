@@ -33,9 +33,13 @@ h2 {
   margin-left: 40px;
 }
 
-@media screen and (min-width: 670px) {
-  .box-1 {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-  }
+img {
+ max-width: 100%;
+ height: auto;
 }
+
+/* @media (min-width: 1000px) {
+  .box-1 {
+    display: flex;
+  }
+} */
